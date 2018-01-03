@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="3" failures="3" name="TestSuite" time="13.078" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_151\jre\bin"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\AK\Java\Workspace\AutoWeb"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\AK\Java\Workspace\AutoWeb"/>
+    <property name="java.runtime.version" value="1.8.0_151-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_151\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\kumanil\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\AK\Java\Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3916320547438702799.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\app\product\11.2.0\client_1\bin;C:\Program Files (x86)\CA\SC\CAWIN\;C:\app\Altiadmin\product\11.2.0\client_1;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\PROGRA~2\CA\SC\CAM\bin;C:\Program Files (x86)\CA\SC\Csam\SockAdapter\bin;C:\Program Files (x86)\CA\DSM\bin;C:\Program Files (x86)\CA\SC\CBB\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\WinMerge;C:\Users\kumanil\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\kumanil"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="kumanil"/>
+    <property name="java.class.path" value="/D:/AK/Selenium/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.0.20150526-2031/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_151\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_151\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_151\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_151\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\AK\Java\Workspace\AutoWeb\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.automation.test.TC001_CreateNewCompany_Test" name="TC001_CreateNewCompany" time="4.217">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.automation.pages.HomePage.clickNewCompanylink(HomePage.java:118)
+	at com.automation.test.TC001_CreateNewCompany_Test.TC001_CreateNewCompany(TC001_CreateNewCompany_Test.java:29)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@1c2c22f3
+Report Path is --&gt; D:\AK\Java\Workspace\AutoWeb\AutomationResources\Report
+==== Report file Path is ===&gt;D:\AK\Java\Workspace\AutoWeb\AutomationResources\Report\AutomationReport.html
+Chrome PAthD:\AK\Java\Workspace\AutoWeb\AutomationResources\Drivers\chromedriver.exe
+URL is https://www.crmpro.com
+URL is https://www.crmpro.com
+User Name is anil4684
+Password is Ocwen@036
+---&gt; Waiting for Element[[ChromeDriver: chrome on XP (5bab33d487ef3dddd751f1955c9fd9ed)] -&gt; xpath: //input[@type=&apos;submit&apos;]]
+Max Pool is 60
+Poll time  is 10
+Clicking on NEW COMPANY
+YES I HAVE CLIKCED on NEW COMPANY
+</system-out>
+    <system-err>Starting ChromeDriver 2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41) on port 20487
+Only local connections are allowed.
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+</system-err>
+  </testcase>
+  <testcase classname="com.automation.test.TC002_Deals_Test" name="TC002_Deals" time="5.351">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.automation.pages.HomePage.clickDealsNewDeal(HomePage.java:138)
+	at com.automation.test.TC002_Deals_Test.TC002_Deals(TC002_Deals_Test.java:24)
+</failure>
+    <system-out>Chrome PAthD:\AK\Java\Workspace\AutoWeb\AutomationResources\Drivers\chromedriver.exe
+URL is https://www.crmpro.com
+URL is https://www.crmpro.com
+User Name is anil4684
+Password is Ocwen@036
+---&gt; Waiting for Element[[ChromeDriver: chrome on XP (e46de6ef627f2e518f0761f8d8e7f4c6)] -&gt; xpath: //input[@type=&apos;submit&apos;]]
+Max Pool is 60
+Poll time  is 10
+</system-out>
+    <system-err>Starting ChromeDriver 2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41) on port 13066
+Only local connections are allowed.
+</system-err>
+  </testcase>
+  <testcase classname="com.automation.test.TC003_Report_Test" name="TC003_Report" time="3.51">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.automation.pages.HomePage.clickReportlink(HomePage.java:146)
+	at com.automation.test.TC003_Report_Test.TC003_Report(TC003_Report_Test.java:24)
+</failure>
+    <system-out>Chrome PAthD:\AK\Java\Workspace\AutoWeb\AutomationResources\Drivers\chromedriver.exe
+URL is https://www.crmpro.com
+URL is https://www.crmpro.com
+User Name is anil4684
+Password is Ocwen@036
+---&gt; Waiting for Element[[ChromeDriver: chrome on XP (a226e0a37e33c7d039cd5fa29ddb6bbc)] -&gt; xpath: //input[@type=&apos;submit&apos;]]
+Max Pool is 60
+Poll time  is 10
+</system-out>
+    <system-err>Starting ChromeDriver 2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41) on port 24892
+Only local connections are allowed.
+</system-err>
+  </testcase>
+</testsuite>
