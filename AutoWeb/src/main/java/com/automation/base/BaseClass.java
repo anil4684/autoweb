@@ -34,6 +34,7 @@ public class BaseClass extends ExcelReader
 	{
 	
 	//	String browser = config.getBrowser();
+		 // Sample
 		
 		System.setProperty("webdriver.chrome.driver", config.getChromeDriverPath());
         driver = new ChromeDriver();
