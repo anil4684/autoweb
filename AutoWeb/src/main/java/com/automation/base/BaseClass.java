@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
@@ -33,30 +34,27 @@ public class BaseClass extends ExcelReader
 	 public void SetupBrowser()
 	{
 	
-	//	String browser = config.getBrowser();
-		 // Sample
-		
-		System.setProperty("webdriver.chrome.driver", config.getChromeDriverPath());
-        driver = new ChromeDriver();
-        setDriver(driver); 
+	String browser = config.getBrowser();
 	
 		
-		
-	/*switch (browser)
-		{
-		case "chrome" : System.setProperty("webdriver.chrome.driver", config.getChromeDriverPath());
+	if(browser.equalsIgnoreCase("chrome"))
+	{
+	System.setProperty("webdriver.chrome.driver", config.getChromeDriverPath());
 		                driver = new ChromeDriver();
 		                setDriver(driver);
-		                break;
-			 
-		case "firefox" : System.setProperty("webdriver.gecko.driver", config.getFirefoxDriverPath());
+	}
+	else if (browser.equalsIgnoreCase("firefox"))
+	{
+	 System.setProperty("webdriver.gecko.driver", config.getFirefoxDriverPath());
 				        driver = new FirefoxDriver();
 				        setDriver(driver);
-				        break;
-				        
-        default :       break;
-        
-      		} */
+       		} 
+	else if (browser.equalsIgnoreCase("ie"))
+	{
+	 System.setProperty("webdriver.ie.driver", config.getIEDriverPath());
+				        driver = new InternetExplorerDriver();
+				        setDriver(driver);
+       		}
 	} 
 	
 	public void LaunchUrl(String url)
