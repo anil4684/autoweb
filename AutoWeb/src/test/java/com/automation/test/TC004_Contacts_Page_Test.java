@@ -10,7 +10,7 @@ import com.automation.pages.HomePage;
 import com.automation.pages.LoginPage;
 import com.automation.utils.ConfigReader;
 
-public class TC004_Contacts_Page extends BaseClass {
+public class TC004_Contacts_Page_Test extends BaseClass {
 	
 	BaseClass base;
 	HomePage homepage;

@@ -9,7 +9,7 @@
 <class name = "com.automation.test.TC001_CreateNewCompany_Test" />
 <class name = "com.automation.test.TC002_Deals_Test" />
 <class name = "com.automation.test.TC003_Report_Test" />
-<class name = "com.automation.test.TC004_Contacts" />
+<class name = "com.automation.test.TC004_Contacts_Page_Test" />
 
 </classes>
 </test>
