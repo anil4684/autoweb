@@ -18,7 +18,7 @@ public class TestCaseListener  extends BaseClass implements ITestListener
 	BaseClass base;
 	
 	
-	private static  String testcase;
+	private   static  String testcase;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -57,7 +57,7 @@ public class TestCaseListener  extends BaseClass implements ITestListener
 	}
 
 	@Override
-	public void onTestStart(ITestResult result) {
+	public void onTestStart(ITestResult result)  {
 		System.out.println("-------------- ON TEST START -----------------");
 	    testcase = 	result.getName();
 	   System.out.println("Starting the TestCase ==> "+testcase);

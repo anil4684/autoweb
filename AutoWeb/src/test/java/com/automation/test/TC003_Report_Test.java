@@ -13,7 +13,7 @@ import com.automation.utils.ConfigReader;
 public class TC003_Report_Test extends BaseClass{
 	
 	BaseClass base;
-	LoginPage loginpage;
+	LoginPage loginpage; 
 	HomePage homepage;
 	ReportsPage reportspage;
 	

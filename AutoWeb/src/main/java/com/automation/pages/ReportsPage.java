@@ -16,7 +16,7 @@ WebDriver driver;
 String str;
 ExcelReader excel = new ExcelReader();
 
-	@FindBy(linkText="Call Statistics")
+	@FindBy(linkText="Call Statistics") 
 	WebElement lnk_callStatics;
 	
 	@FindBy(name="graph")

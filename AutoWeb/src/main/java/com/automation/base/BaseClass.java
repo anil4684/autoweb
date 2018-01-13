@@ -4,12 +4,15 @@ import java.io.File;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
@@ -51,21 +54,27 @@ public class BaseClass extends ExcelReader
        		} 
 	else if (browser.equalsIgnoreCase("ie"))
 	{
+		DesiredCapabilities cap = new DesiredCapabilities();
+		cap.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+		cap.setCapability("ignoreZoomSetting", true);
+		
 	 System.setProperty("webdriver.ie.driver", config.getIEDriverPath());
 				        driver = new InternetExplorerDriver();
 				        setDriver(driver);
+				        driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL, "0"));
        		}
 	} 
 	
 	public void LaunchUrl(String url)
 	{
-	//	driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		js =  (JavascriptExecutor)driver;
-		js.executeScript("if(window.screen){ window.moveTo(0, 0); window.resizeTo(window.screen.availWidth, window.screen.availHeight);};");
-	    driver.navigate().to(config.getUrl());
-			//	driver.manage().deleteAllCookies();
+//		js.executeScript("if(window.screen){ window.moveTo(0, 0); window.resizeTo(window.screen.availWidth, window.screen.availHeight);};");
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	    driver.get(config.getUrl());
+			//	driver.manage().deleteAllCookies();
+	
 	
 	}
 	
@@ -89,7 +98,7 @@ public class BaseClass extends ExcelReader
 		return driver;
 	}
 	
-	public void wait(WebElement element)
+	public void webdriverwait(WebElement element)
 	{
 		System.out.println("---> Waiting for Element"+element);
 		WebDriverWait wait = new WebDriverWait(driver,config.getMaxtime());

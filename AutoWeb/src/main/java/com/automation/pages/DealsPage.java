@@ -14,7 +14,7 @@ public class DealsPage extends BaseClass{
 	ExcelReader excel = new ExcelReader();
 	String str;
 	
-	@FindBy(id="title")
+	@FindBy(id="title") 
 	WebElement txt_title;
 	
 	@FindBy(name="client_lookup")

@@ -15,9 +15,8 @@ import org.testng.annotations.BeforeClass;
 
 public class TC001_CreateNewCompany_Test extends BaseClass
 {
-BaseClass base;
+BaseClass base; 
 LoginPage loginpage;
-ConfigReader config;
 HomePage homepage;
 CompanyPage companypage;
 
@@ -26,7 +25,7 @@ CompanyPage companypage;
   public void TC001_CreateNewCompany() 
   {
 	  homepage = new HomePage(driver);
-	  homepage.clickNewCompanylink();
+	   homepage.clickNewCompanylink();
       companypage = new CompanyPage(driver);
       companypage.enterCompanyName("TC001_CompanyName");
 	  companypage.enterIndustryName("TC001_Industry");

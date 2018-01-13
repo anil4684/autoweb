@@ -68,7 +68,7 @@ public class CompanyPage extends BaseClass{
 		
 		str = 	excel.getTestData(companyname);
 			
-		wait(txt_companyName);
+		webdriverwait(txt_companyName); 
 		try
 		{
 		txt_companyName.sendKeys(str);

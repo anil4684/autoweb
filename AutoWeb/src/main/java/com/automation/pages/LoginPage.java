@@ -1,5 +1,6 @@
 package com.automation.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -57,12 +58,18 @@ JavascriptExecutor js;
   {
     	username.sendKeys(userid);
     	password.sendKeys(pwd);
-    	wait(submitbutton);
+    //	webdriverwait(submitbutton);
     	//submitbutton.click();
     	if(submitbutton.isDisplayed() && submitbutton.isEnabled())
     	{    	
     	js  =  (JavascriptExecutor)driver;
-    	js.executeScript("arguments[0].click();",submitbutton );
+    	js.executeScript("arguments[0].click();",submitbutton ); 
+		driver.switchTo().frame("mainpanel");
+		driver.findElement(By.xpath("//a[@title='Contacts']")).click();
+		driver.findElement(By.xpath("//form[@id='vContactsForm']/table[@class='datacard']/descendant::tr/td/a[@_name='Bharath K']/parent::td/preceding-sibling::td/input[@type='checkbox']")).click();
+		driver.findElement(By.xpath(" //form[@id='vContactsForm']/table[@class='datacard']/descendant::tr/td/a[@_name='Bharath K']/parent::td/following-sibling::td/a/i[@title='Edit']")).click();
+		driver.findElement(By.name("middle_initial")).sendKeys("Kumar");;
+		driver.findElement(By.xpath("//input[@type='submit']")).click();
     	}
     	else
     		System.out.println("Not able to click on Submit button");

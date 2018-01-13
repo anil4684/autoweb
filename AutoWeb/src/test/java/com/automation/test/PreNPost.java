@@ -15,7 +15,7 @@ public class PreNPost {
 	protected static ExtentReports exreport;
 	protected static ExtentTest logger;
 	
-	@BeforeSuite
+	@BeforeSuite 
 	public void extentReport()
 	{
 		BaseClass base = new BaseClass();

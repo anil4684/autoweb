@@ -7,7 +7,7 @@ import com.automation.base.BaseClass;
 import com.automation.pages.LoginPage;
 
 
-public class sampletestngclass extends BaseClass{
+public class sampletestngclass extends BaseClass {
 	
 
   @Test (enabled=false)

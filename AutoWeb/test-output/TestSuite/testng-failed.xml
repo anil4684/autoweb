@@ -6,27 +6,13 @@
   </listeners>
   <test name="SampleTest(failed)">
     <classes>
-      <class name="com.automation.test.sampletestngclass">
+      <class name="com.automation.test.TC005_EditContactInfo_Test">
         <methods>
-          <include name="afterSuite"/>
-          <include name="extentReport"/>
-          <include name="sampletestngclass_test"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.automation.test.sampletestngclass -->
-      <class name="com.automation.test.TC001_CreateNewCompany_Test">
-        <methods>
-          <include name="TC001_CreateNewCompany"/>
-          <include name="afterMethod"/>
+          <include name="TC005_EditContactInfo"/>
           <include name="beforeMethod"/>
-          <include name="afterClass"/>
+          <include name="extentReport"/>
         </methods>
-      </class> <!-- com.automation.test.TC001_CreateNewCompany_Test -->
-      <class name="com.automation.test.DemoTest">
-        <methods>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.automation.test.DemoTest -->
+      </class> <!-- com.automation.test.TC005_EditContactInfo_Test -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

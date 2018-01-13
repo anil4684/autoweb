@@ -95,7 +95,7 @@ public class HomePage extends BaseClass
 	public Boolean isHomeLinkDisplayed()
 	{
 		switchtoframeByName("mainpanel");
-		wait(lnk_home);
+		webdriverwait(lnk_home);
 		return lnk_home.isDisplayed();
 	}
 	
@@ -107,15 +107,16 @@ public class HomePage extends BaseClass
 	}
 	
 
-	public void clickNewCompanylink()
+	public void clickNewCompanylink() 
 	{
 		System.out.println("Clicking on NEW COMPANY");
 		switchtoframeByName("mainpanel");
 		action = new Actions(driver);
+		webdriverwait(lnk_companies);
 		action.moveToElement(lnk_companies).build().perform();
 		lnk_company_newCompany.click();
 		System.out.println("YES I HAVE CLIKCED on NEW COMPANY");
-		logger.log(LogStatus.PASS, "Clicked on New Company Link");
+		logger.log(LogStatus.PASS, "Clicked on New Company Link"); 
 		
 	}
 	
@@ -154,5 +155,15 @@ public class HomePage extends BaseClass
 		lnk_Contacts_NewContact.click();
 		logger.log(LogStatus.PASS, "Clicked on Contacts --> New Contact Link");
 	}
+	
+	public void clickContactlink()
+	{
+		switchtoframeByName("mainpanel");
+		lnk_contacts.click();
+		logger.log(LogStatus.PASS, "Clicked on Contacts");
+	}
+	
+	
+	
 	
 }

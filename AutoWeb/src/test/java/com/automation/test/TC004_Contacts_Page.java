@@ -18,7 +18,7 @@ public class TC004_Contacts_Page extends BaseClass {
 	ContactsPage contactsPage;
 	
 	@Test (enabled=true)
-	public void TC004_Contacts()
+	public void TC004_Contacts() 
 	{
 		homepage = new HomePage(driver);
 		  homepage.clickNewContactlink();

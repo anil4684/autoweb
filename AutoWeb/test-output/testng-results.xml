@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="37830" started-at="2018-01-03T16:58:59Z" finished-at="2018-01-03T16:59:37Z">
+  <suite name="TestSuite" duration-ms="53358" started-at="2018-01-10T11:51:03Z" finished-at="2018-01-10T11:51:57Z">
     <groups>
     </groups>
-    <test name="SampleTest" duration-ms="37830" started-at="2018-01-03T16:58:59Z" finished-at="2018-01-03T16:59:37Z">
-      <class name="com.automation.test.TC001_CreateNewCompany_Test">
-        <test-method status="PASS" signature="extentReport()[pri:0, instance:com.automation.test.TC001_CreateNewCompany_Test@52a86356]" name="extentReport" is-config="true" duration-ms="343" started-at="2018-01-03T22:28:59Z" finished-at="2018-01-03T22:28:59Z">
+    <test name="SampleTest" duration-ms="53358" started-at="2018-01-10T11:51:03Z" finished-at="2018-01-10T11:51:57Z">
+      <class name="com.automation.test.TC005_EditContactInfo_Test">
+        <test-method status="PASS" signature="extentReport()[pri:0, instance:com.automation.test.TC005_EditContactInfo_Test@1d057a39]" name="extentReport" is-config="true" duration-ms="255" started-at="2018-01-10T17:21:03Z" finished-at="2018-01-10T17:21:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReport -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.automation.test.TC001_CreateNewCompany_Test@52a86356]" name="beforeMethod" is-config="true" duration-ms="28227" started-at="2018-01-03T22:28:59Z" finished-at="2018-01-03T22:29:27Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.automation.test.TC005_EditContactInfo_Test@1d057a39]" name="beforeMethod" is-config="true" duration-ms="53044" started-at="2018-01-10T17:21:03Z" finished-at="2018-01-10T17:21:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC001_CreateNewCompany()[pri:0, instance:com.automation.test.TC001_CreateNewCompany_Test@52a86356]" name="TC001_CreateNewCompany" duration-ms="8142" started-at="2018-01-03T22:29:27Z" finished-at="2018-01-03T22:29:35Z">
+        <test-method status="PASS" signature="TC005_EditContactInfo()[pri:0, instance:com.automation.test.TC005_EditContactInfo_Test@1d057a39]" name="TC005_EditContactInfo" duration-ms="282" started-at="2018-01-10T17:21:56Z" finished-at="2018-01-10T17:21:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC001_CreateNewCompany -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automation.test.TC001_CreateNewCompany_Test@52a86356]" name="afterMethod" is-config="true" duration-ms="1435" started-at="2018-01-03T22:29:35Z" finished-at="2018-01-03T22:29:37Z">
+        </test-method> <!-- TC005_EditContactInfo -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automation.test.TC005_EditContactInfo_Test@1d057a39]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-01-10T17:21:57Z" finished-at="2018-01-10T17:21:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.automation.test.TC001_CreateNewCompany_Test@52a86356]" name="afterClass" is-config="true" duration-ms="2" started-at="2018-01-03T22:29:37Z" finished-at="2018-01-03T22:29:37Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.automation.test.TC005_EditContactInfo_Test@1d057a39]" name="afterClass" is-config="true" duration-ms="4" started-at="2018-01-10T17:21:57Z" finished-at="2018-01-10T17:21:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.automation.test.TC001_CreateNewCompany_Test@52a86356]" name="afterSuite" is-config="true" duration-ms="509" started-at="2018-01-03T22:29:37Z" finished-at="2018-01-03T22:29:37Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.automation.test.TC005_EditContactInfo_Test@1d057a39]" name="afterSuite" is-config="true" duration-ms="3147" started-at="2018-01-10T17:21:57Z" finished-at="2018-01-10T17:22:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.automation.test.TC001_CreateNewCompany_Test -->
+      </class> <!-- com.automation.test.TC005_EditContactInfo_Test -->
     </test> <!-- SampleTest -->
   </suite> <!-- TestSuite -->
 </testng-results>

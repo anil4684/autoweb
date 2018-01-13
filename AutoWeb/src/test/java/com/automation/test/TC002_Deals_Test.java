@@ -12,7 +12,7 @@ import com.automation.utils.ConfigReader;
 
 public class TC002_Deals_Test extends BaseClass{
 	
-	BaseClass base;
+	BaseClass base; 
 	LoginPage loginpage;
 	HomePage homepage;
 	DealsPage dealspage;

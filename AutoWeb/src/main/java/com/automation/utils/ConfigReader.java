@@ -46,6 +46,14 @@ public class ConfigReader {
 		return firefoxpath;
 	}
 	
+	public String getIEDriverPath()
+	{
+		String ie = prop.getProperty("iedriverpath");
+		String iepath = currentdirectory+"\\"+ie;
+		System.out.println("fire->"+iepath);
+		return iepath;
+	}
+	
 	public String getTestDatapath()
 	{
 		String testdatapth = prop.getProperty("testdatapath");
