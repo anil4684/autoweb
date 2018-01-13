@@ -56,8 +56,8 @@ public class ContactsPage extends BaseClass{
     	// System.out.println("Switched to Frame");
     	//	switchtoframeByName("mainpanel");
     	//    table_contactinfo.click();
-    	    driver.switchTo().defaultContent();
-    	    System.out.println("Switched OUT of to Frame");
+    	 //   driver.switchTo().defaultContent();
+    	//    System.out.println("Switched OUT of to Frame");
     	    table_contactinfo.click();
     	//	 driver.findElement(By.xpath("//form[@id='vContactsForm']/table[@class='datacard']/descendant::tr/td/a[@_name='Srinivas R']/parent::td/preceding-sibling::td/input[@type='checkbox']")).click();
     	//	driver.findElement(By.xpath(" //form[@id='vContactsForm']/table[@class='datacard']/descendant::tr/td/a[@_name='Srinivas R']/parent::td/following-sibling::td/a/i[@title='Edit']")).click();
