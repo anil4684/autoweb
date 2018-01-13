@@ -10,7 +10,10 @@
         <methods>
           <include name="TC005_EditContactInfo"/>
           <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
           <include name="extentReport"/>
+          <include name="afterClass"/>
         </methods>
       </class> <!-- com.automation.test.TC005_EditContactInfo_Test -->
     </classes>
