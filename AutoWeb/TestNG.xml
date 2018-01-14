@@ -6,11 +6,8 @@
 </listeners>
 <test name="SampleTest">
 <classes>
-<class name = "com.automation.test.TC001_CreateNewCompany_Test" />
-<class name = "com.automation.test.TC002_Deals_Test" />
-<class name = "com.automation.test.TC003_Report_Test" />
-<class name = "com.automation.test.TC004_Contacts_Page_Test" />
-
+<class name = "com.automation.test.Sampletestngclass_Test" />
+<class name = "com.automation.test.DemoTest" />
 </classes>
 </test>
 </suite>

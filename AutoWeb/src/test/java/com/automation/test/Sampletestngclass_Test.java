@@ -5,15 +5,16 @@ import org.testng.annotations.Test;
 
 import com.automation.base.BaseClass;
 import com.automation.pages.LoginPage;
+import com.relevantcodes.extentreports.LogStatus;
 
 
-public class sampletestngclass extends BaseClass {
+public class Sampletestngclass_Test extends BaseClass {
 	
 
-  @Test (enabled=false)
+  @Test (enabled=true)
   public void sampletestngclass_test() {
 
 	  System.out.println("<========================Executed TEST CASE ===============>");
-	  Assert.assertTrue(false, "SAMPLE");
+	  logger.log(LogStatus.PASS, "Executed the step");
   }
 }
