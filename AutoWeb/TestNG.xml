@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name = "TestSuite" >
+<suite name = "TestSuite" parallel="classes" thread-count="2">
 <listeners>
 <listener class-name="com.automation.listener.TestCaseListener"/> 
 </listeners>
 <test name="SampleTest">
 <classes>
-<class name = "com.automation.test.Sampletestngclass_Test" />
-<class name = "com.automation.test.DemoTest" />
+<class name = "com.automation.icehrmtest.TC001_RegisterCompany_Test" />
+<class name = "com.automation.icehrmtest.TC003_RegisterNewUser_Test" />
+<class name = "com.automation.icehrmtest.TC004_AddPeople_Test" />
+<class name = "com.automation.icehrmtest.TC005_RegisterProject_Test" />
+<class name = "com.automation.icehrmtest.TC006_AddLeave_Test" />
+
+
 </classes>
 </test>
 </suite>

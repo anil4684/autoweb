@@ -6,16 +6,31 @@
   </listeners>
   <test name="SampleTest(failed)">
     <classes>
-      <class name="com.automation.test.TC005_EditContactInfo_Test">
+      <class name="com.automation.icehrmtest.TC005_RegisterProject_Test">
         <methods>
-          <include name="TC005_EditContactInfo"/>
-          <include name="beforeMethod"/>
-          <include name="afterSuite"/>
-          <include name="afterMethod"/>
+          <include name="TC005_RegisterProject"/>
+          <include name="beforeClass"/>
           <include name="extentReport"/>
-          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.automation.test.TC005_EditContactInfo_Test -->
+      </class> <!-- com.automation.icehrmtest.TC005_RegisterProject_Test -->
+      <class name="com.automation.icehrmtest.TC003_RegisterNewUser_Test">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="TC003_RegisterNewUser"/>
+        </methods>
+      </class> <!-- com.automation.icehrmtest.TC003_RegisterNewUser_Test -->
+      <class name="com.automation.icehrmtest.TC004_AddPeople_Test">
+        <methods>
+          <include name="TC004_AddEmployee"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.automation.icehrmtest.TC004_AddPeople_Test -->
+      <class name="com.automation.icehrmtest.TC001_RegisterCompany_Test">
+        <methods>
+          <include name="TC001_RegisterCompany"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.automation.icehrmtest.TC001_RegisterCompany_Test -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

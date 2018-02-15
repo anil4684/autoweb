@@ -19,12 +19,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import com.automation.listener.TestCaseListener;
 import com.automation.utils.ConfigReader;
 import com.automation.utils.ExcelReader;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
-public class BaseClass extends ExcelReader
+public class BaseClass 
 
 {
 	protected static ExtentReports exreport;
@@ -32,7 +33,8 @@ public class BaseClass extends ExcelReader
 	protected ConfigReader config = new ConfigReader();
 	protected ExcelReader excel= new ExcelReader();
 	JavascriptExecutor js ;
-	protected  static WebDriver driver;
+	
+	protected  static  WebDriver driver;
 
 	 public void SetupBrowser()
 	{
@@ -72,9 +74,8 @@ public class BaseClass extends ExcelReader
 //		js.executeScript("if(window.screen){ window.moveTo(0, 0); window.resizeTo(window.screen.availWidth, window.screen.availHeight);};");
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-	    driver.get(config.getUrl());
+	    driver.get(url);
 			//	driver.manage().deleteAllCookies();
-	
 	
 	}
 	
@@ -98,13 +99,26 @@ public class BaseClass extends ExcelReader
 		return driver;
 	}
 	
+		
+
+	
 	public void webdriverwait(WebElement element)
 	{
-		System.out.println("---> Waiting for Element"+element);
+		System.out.println("---> Waiting for Visiblity of Element"+element);
 		WebDriverWait wait = new WebDriverWait(driver,config.getMaxtime());
 		wait.pollingEvery(config.getPolltime(), TimeUnit.SECONDS);
 		wait.ignoring(NoSuchElementException.class);
 		wait.until(ExpectedConditions.visibilityOf(element));
+		
+	}
+	
+	public void webDriverWaitUntilClickable(WebElement element)
+	{
+		System.out.println("---> Waiting for Element to be Clickable"+element);
+		WebDriverWait wait = new WebDriverWait(driver,config.getMaxtime());
+		wait.pollingEvery(config.getPolltime(), TimeUnit.SECONDS);
+		wait.ignoring(NoSuchElementException.class);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 		
 	}
 	
@@ -113,19 +127,27 @@ public class BaseClass extends ExcelReader
 		driver.switchTo().frame(framename);
 	}
 	
+	
+	
 	@BeforeSuite
-	public void extentReport()
+	public synchronized static ExtentReports extentReport()
 	{
-		BaseClass base = new BaseClass();
-		String reportpath = base.getReportPath()+"\\"+"AutomationReport.html";
+		ExcelReader excel = new ExcelReader();
+		String reportpath = excel.getReportPath()+"\\"+"AutomationReport.html";
 		System.out.println("==== Report file Path is ===>"+reportpath);
 		exreport = new ExtentReports(reportpath);
 		exreport.addSystemInfo("OS", "WINDOWS 8");
+		
+		// Screen Grab https://github.com/anshooarora/extentreports-java/issues/751
+		//  Report using Listener  https://www.swtestacademy.com/extentreports-testng/  
+		 // Allure Report https://www.swtestacademy.com/allure-testng/
+		return exreport;
 	}
 	
 	@AfterClass
 	public void afterClass()
 	{
+	
 		exreport.endTest(logger);
 	}
 	

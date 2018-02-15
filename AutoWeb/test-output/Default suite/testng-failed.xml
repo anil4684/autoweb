@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.automation.test.Test_TC001_Login">
+      <class name="com.automation.icehrmtest.TC002_DataProvider_RegisterCompany_Test">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="TC001"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="TC002_DataProvider_RegisterCompany"/>
+          <include name="extentReport"/>
         </methods>
-      </class> <!-- com.automation.test.Test_TC001_Login -->
+      </class> <!-- com.automation.icehrmtest.TC002_DataProvider_RegisterCompany_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

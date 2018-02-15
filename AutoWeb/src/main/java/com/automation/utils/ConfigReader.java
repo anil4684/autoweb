@@ -54,6 +54,34 @@ public class ConfigReader {
 		return iepath;
 	}
 	
+	public String getCrmTestDatapath()
+	{
+		String testdatapth = prop.getProperty("crmtestdatapath");
+		System.out.println(" CRM Test Data Path is "+testdatapth);
+		return testdatapth;
+	}
+	
+	public String getIceHrmTestDatapath()
+	{
+		String testdatapth = prop.getProperty("icehrmtestdatapath");
+		System.out.println(" Ice Hrm Test Data Path is "+testdatapth);
+		return testdatapth;
+	}
+	
+	public String getMyHrTestDatapath()
+	{
+		String testdatapth = prop.getProperty("myhrtestdatapath");
+		System.out.println("My Hr Test Data Path is "+testdatapth);
+		return testdatapth;
+	}
+	
+	public String getSkyTestDatapath()
+	{
+		String testdatapth = prop.getProperty("skytestdatapath");
+		System.out.println("Test Data Path is "+testdatapth);
+		return testdatapth;
+	}
+	
 	public String getTestDatapath()
 	{
 		String testdatapth = prop.getProperty("testdatapath");
@@ -61,23 +89,91 @@ public class ConfigReader {
 		return testdatapth;
 	}
 	
-	public String getUrl()
+	public String getCrmUrl()
 	{
-		String url = prop.getProperty("url");
+		String url = prop.getProperty("crmurl");
 		System.out.println("URL is "+url);
 		return url	;
 	}
 	
-	public String getUserName()
+	public String getCrmUserName()
 	{
-		String username = prop.getProperty("username");
+		String username = prop.getProperty("crmusername");
 		System.out.println("User Name is "+username);
 		return username;
 	}
 	
-	public String getUserPassword()
+	public String getCrmUserPassword()
 	{
-		String password = prop.getProperty("password");
+		String password = prop.getProperty("crmpassword");
+		System.out.println("Password is "+password);
+		return password;
+	}
+	
+	
+	public String getIcehrmUrl()
+	{
+		String url = prop.getProperty("icehrmurl");
+		System.out.println("URL is "+url);
+		return url	;
+	}
+	
+
+	
+	public String getIcehrmUserName()
+	{
+		String username = prop.getProperty("icehrmusername");
+		System.out.println("User Name is "+username);
+		return username;
+	}
+	
+
+	
+	public String getIcehrmUserPassword()
+	{
+		String password = prop.getProperty("icehrmpassword");
+		System.out.println("Password is "+password);
+		return password;
+	}
+	
+	public String getMyhrUrl()
+	{
+		String url = prop.getProperty("myurl");
+		System.out.println("URL is "+url);
+		return url	;
+	}
+	
+	public String getMyhrUserName()
+	{
+		String username = prop.getProperty("myhrusername");
+		System.out.println("User Name is "+username);
+		return username;
+	}
+	
+	public String getMyhrUserPassword()
+	{
+		String password = prop.getProperty("myhrpassword");
+		System.out.println("Password is "+password);
+		return password;
+	}
+	
+	public String getSkyUrl()
+	{
+		String url = prop.getProperty("skyurl");
+		System.out.println("URL is "+url);
+		return url	;
+	}
+	
+	public String getSkyUserName()
+	{
+		String username = prop.getProperty("skyusername");
+		System.out.println("User Name is "+username);
+		return username;
+	}
+	
+	public String getSkyUserPassword()
+	{
+		String password = prop.getProperty("skypassword");
 		System.out.println("Password is "+password);
 		return password;
 	}
@@ -108,6 +204,13 @@ public class ConfigReader {
 	 {
 		 String reportpath = currentdirectory+"\\"+prop.getProperty("report");
 		 System.out.println("Report Path is --> "+reportpath);
+		 return reportpath;
+	 }
+	 
+	 public String getSikuliImagePath()
+	 {
+		 String reportpath = currentdirectory+"\\"+prop.getProperty("sikuliImagePath");
+		 System.out.println("sikuliImage Path is --> "+reportpath);
 		 return reportpath;
 	 }
 }
