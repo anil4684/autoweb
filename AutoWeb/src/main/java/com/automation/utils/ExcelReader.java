@@ -9,7 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestListener;
 import org.testng.annotations.DataProvider;
 
@@ -43,13 +43,13 @@ public class ExcelReader extends ConfigReader
 	
 
 	
-	public String getTestData(String testdata)
+	public synchronized String getTestData(String testdata)
 	{
 		 config = new ConfigReader();
 		 test = new TestCaseListener();		
 	    workingdir = currentdirectory;
 		String testdatapath = config.getTestDatapath();
-		String testcasename = test.getTestcaseName()+".xlsx";
+		String testcasename = test.getTestcase()+".xlsx";
 		String testdatafilepath= workingdir+"\\"+testdatapath+"\\"+testcasename;
 		System.out.println("Test Data File "+testdatafilepath);
 		

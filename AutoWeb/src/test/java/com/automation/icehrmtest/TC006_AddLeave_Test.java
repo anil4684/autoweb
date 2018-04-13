@@ -1,6 +1,7 @@
 package com.automation.icehrmtest;
 
 import org.sikuli.script.FindFailed;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -13,11 +14,11 @@ import com.automation.utils.ExcelReader;
 
 public class TC006_AddLeave_Test extends BaseClass{
   
-	@Test(enabled=true)
+	@Test(enabled=false)
   public void TC006_AddLeave() {
 		ExcelReader excel = new ExcelReader();
-	  IcehrmHomePage homepage = new IcehrmHomePage(driver);
-	  IcehrmLeaveManagementPage leavepage = new IcehrmLeaveManagementPage(driver);
+	  IcehrmHomePage homepage = new IcehrmHomePage(getDriver());
+	  IcehrmLeaveManagementPage leavepage = new IcehrmLeaveManagementPage(getDriver());
 	  try {
 		homepage.clickOnLeaveManagement();
 	
@@ -37,7 +38,14 @@ public class TC006_AddLeave_Test extends BaseClass{
 	  ConfigReader config = new ConfigReader();
 	  base.SetupBrowser();
 	  base.LaunchUrl(config.getIcehrmUrl());
-	  IcehrmLoginPage login = new IcehrmLoginPage(driver);
+	  IcehrmLoginPage login = new IcehrmLoginPage(getDriver());
 	  login.loginIcehrm();
   }
+ 
+ 
+ @AfterClass
+ public void afterClass() {
+	  BaseClass base = new BaseClass();
+	  base.driverClose();
+ }
 }

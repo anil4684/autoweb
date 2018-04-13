@@ -12,9 +12,11 @@ import com.automation.utils.ConfigReader;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class IcehrmLoginPage   {
+public class IcehrmLoginPage  extends BaseClass {
+	// WebDriver driver =getDriver();
 	
-WebDriver driver;
+	
+
 ExtentTest log;
 ConfigReader config = new ConfigReader();
 	

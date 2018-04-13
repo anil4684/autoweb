@@ -1,36 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [TestSuite]">
-  <listeners>
-    <listener class-name="com.automation.listener.TestCaseListener"/>
-  </listeners>
-  <test name="SampleTest(failed)">
+<suite name="Failed suite [Cucumber Suite]">
+  <test name="Cucumber Tests(failed)">
     <classes>
-      <class name="com.automation.icehrmtest.TC005_RegisterProject_Test">
+      <class name="com.automation.cucumber.runner.icehrmTestRunner">
         <methods>
-          <include name="TC005_RegisterProject"/>
-          <include name="beforeClass"/>
-          <include name="extentReport"/>
+          <include name="user_homepage"/>
+          <include name="registercompany"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.automation.icehrmtest.TC005_RegisterProject_Test -->
-      <class name="com.automation.icehrmtest.TC003_RegisterNewUser_Test">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="TC003_RegisterNewUser"/>
-        </methods>
-      </class> <!-- com.automation.icehrmtest.TC003_RegisterNewUser_Test -->
-      <class name="com.automation.icehrmtest.TC004_AddPeople_Test">
-        <methods>
-          <include name="TC004_AddEmployee"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.automation.icehrmtest.TC004_AddPeople_Test -->
-      <class name="com.automation.icehrmtest.TC001_RegisterCompany_Test">
-        <methods>
-          <include name="TC001_RegisterCompany"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.automation.icehrmtest.TC001_RegisterCompany_Test -->
+      </class> <!-- com.automation.cucumber.runner.icehrmTestRunner -->
     </classes>
-  </test> <!-- SampleTest(failed) -->
-</suite> <!-- Failed suite [TestSuite] -->
+  </test> <!-- Cucumber Tests(failed) -->
+</suite> <!-- Failed suite [Cucumber Suite] -->

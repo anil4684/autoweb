@@ -67,8 +67,9 @@ WebDriver driver;
 		 
 	  
 	  txtName.sendKeys(companyname);
-	  logger.log(LogStatus.PASS, "Filled Company Name");
-//	  ExtentTestManager.getTest().log(LogStatus.PASS, "Selected Head Dropdown");
+//	  logger.log(LogStatus.PASS, "Filled Company Name");
+//	  ExtentTestManager.getTest().log(LogStatus.PASS, "Filled Company Name");
+	  
 	  
 	  txtDetails.sendKeys(details);
 //	  logger.log(LogStatus.PASS, "Filled Details ");

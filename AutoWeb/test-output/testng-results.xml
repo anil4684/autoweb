@@ -2,34 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="48936" started-at="2018-02-14T19:52:22Z" finished-at="2018-02-14T19:53:11Z">
+  <suite name="Cucumber Suite" duration-ms="93290" started-at="2018-03-07T15:21:36Z" finished-at="2018-03-07T15:23:10Z">
     <groups>
     </groups>
-    <test name="SampleTest" duration-ms="48936" started-at="2018-02-14T19:52:22Z" finished-at="2018-02-14T19:53:11Z">
-      <class name="com.automation.icehrmtest.TC006_AddLeave_Test">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.automation.icehrmtest.TC006_AddLeave_Test@548e7350]" name="beforeClass" is-config="true" duration-ms="30649" started-at="2018-02-15T01:22:22Z" finished-at="2018-02-15T01:22:53Z">
+    <test name="Cucumber Tests" duration-ms="93290" started-at="2018-03-07T15:21:36Z" finished-at="2018-03-07T15:23:10Z">
+      <class name="com.automation.cucumber.runner.TestRunnerLogin">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.automation.cucumber.runner.TestRunnerLogin@7085bdee]" name="login" duration-ms="93243" started-at="2018-03-07T20:51:37Z" finished-at="2018-03-07T20:53:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC006_AddLeave()[pri:0, instance:com.automation.icehrmtest.TC006_AddLeave_Test@548e7350]" name="TC006_AddLeave" duration-ms="18251" started-at="2018-02-15T01:22:53Z" finished-at="2018-02-15T01:23:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC006_AddLeave -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.automation.icehrmtest.TC006_AddLeave_Test@548e7350]" name="afterClass" is-config="true" duration-ms="6" started-at="2018-02-15T01:23:11Z" finished-at="2018-02-15T01:23:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.automation.icehrmtest.TC006_AddLeave_Test -->
-      <class name="com.automation.icehrmtest.TC001_RegisterCompany_Test">
-        <test-method status="PASS" signature="extentReport()[pri:0, instance:com.automation.icehrmtest.TC001_RegisterCompany_Test@5e3a8624]" name="extentReport" is-config="true" duration-ms="208" started-at="2018-02-15T01:22:22Z" finished-at="2018-02-15T01:22:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentReport -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.automation.icehrmtest.TC001_RegisterCompany_Test@5e3a8624]" name="afterSuite" is-config="true" duration-ms="8251" started-at="2018-02-15T01:23:11Z" finished-at="2018-02-15T01:23:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.automation.icehrmtest.TC001_RegisterCompany_Test -->
-    </test> <!-- SampleTest -->
-  </suite> <!-- TestSuite -->
+        </test-method> <!-- login -->
+      </class> <!-- com.automation.cucumber.runner.TestRunnerLogin -->
+    </test> <!-- Cucumber Tests -->
+  </suite> <!-- Cucumber Suite -->
 </testng-results>

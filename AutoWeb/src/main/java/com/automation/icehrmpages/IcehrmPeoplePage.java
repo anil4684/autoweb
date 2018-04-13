@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.log4testng.Logger;
 
 import com.automation.base.BaseClass;
+import com.automation.extentreport.ExtentTestManager;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class IcehrmPeoplePage extends BaseClass{
@@ -28,13 +29,15 @@ public class IcehrmPeoplePage extends BaseClass{
 	
 	public void enterEmployeeNumber(String number){
 		txt_empnum.sendKeys(number);
-		logger.log(LogStatus.PASS, "Enter the Employee Number");
+	//	logger.log(LogStatus.PASS, "Enter the Employee Number");
+	//	ExtentTestManager.getTest().log(LogStatus.PASS, "Enter the Employee Number");
 	}
 	
 	public void clickOnAddNewButton()
 	{
 		btn_addNew.click();
-		logger.log(LogStatus.PASS, "Click on Add New Button");
+//		logger.log(LogStatus.PASS, "Click on Add New Button");
+	//	ExtentTestManager.getTest().log(LogStatus.PASS, "Click on Add New Button");
 	}
 	
 

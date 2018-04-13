@@ -12,7 +12,6 @@
 <class name = "com.automation.icehrmtest.TC005_RegisterProject_Test" />
 <class name = "com.automation.icehrmtest.TC006_AddLeave_Test" />
 
-
 </classes>
 </test>
 </suite>

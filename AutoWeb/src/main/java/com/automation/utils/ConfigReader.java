@@ -213,4 +213,12 @@ public class ConfigReader {
 		 System.out.println("sikuliImage Path is --> "+reportpath);
 		 return reportpath;
 	 }
+	 
+	 public String getScreenGrabImagePath()
+	 {
+		 String reportpath = currentdirectory+"\\"+prop.getProperty("screenshotpath");
+		 System.out.println("ScreenGrab Image Path is --> "+reportpath);
+		 return reportpath;
+	 }
+	 
 }

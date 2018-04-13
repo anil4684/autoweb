@@ -13,12 +13,13 @@ import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
 
 import com.automation.base.BaseClass;
+import com.automation.extentreport.ExtentTestManager;
 import com.automation.listener.TestCaseListener;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class IcehrmHomePage extends BaseClass{
 	
-	WebDriver driver;
+//	WebDriver driver;
 	
 	@FindBy(xpath="//a[contains(text(),'Home')]")
 	WebElement lnkhome;
@@ -88,13 +89,15 @@ public class IcehrmHomePage extends BaseClass{
 	public void clickOnPeopleLink()
 	{
 		lnkPeople.click();
-		logger.log(LogStatus.PASS, "Clicked  on People Link");
+	//	logger.log(LogStatus.PASS, "Clicked  on People Link");
+	//	ExtentTestManager.getTest().log(LogStatus.PASS, "Clicked  on People Link");
 	}
 	
 	public void clickOnCompanyLink()
 	{
 		lnkCompany.click();
-		logger.log(LogStatus.PASS, "Clicked  on Company Link");
+	//	logger.log(LogStatus.PASS, "Clicked  on Company Link");
+	//	ExtentTestManager.getTest().log(LogStatus.PASS, "Clicked  on Company Link");
 	}
 	
 	public void clickOnLeaveManagement() throws FindFailed
@@ -116,13 +119,15 @@ public class IcehrmHomePage extends BaseClass{
 	public void clickOnProjectLink()
 	{
 		lnkProject.click();
-		logger.log(LogStatus.PASS, "Clicked  on Company Link");
+  //		logger.log(LogStatus.PASS, "Clicked  on Company Link");
 	}
 	
 	public void clickOnUserLink()
 	{
 		lnkUser.click();
-		logger.log(LogStatus.PASS, "Clicked  on People Link");
+	//	logger.log(LogStatus.PASS, "Clicked  on People Link");
+	//	ExtentTestManager.getTest().log(LogStatus.PASS, "Clicked  on USER Link");
+
 	}
 	
 	public void clickOnAttendance()
@@ -141,7 +146,14 @@ public class IcehrmHomePage extends BaseClass{
 		BaseClass base = new BaseClass();
 		driver = base.getDriver();
 		driver.navigate().to("https://icehrm.com/app/anil4684/?g=admin&n=dashboard&m=admin_Admin");
-		logger.log(LogStatus.PASS, "Navigated to Home Page");
+	//	logger.log(LogStatus.PASS, "Navigated to Home Page");
+	//	ExtentTestManager.getTest().log(LogStatus.PASS, "Navigate to Home Page");
+		
+	}
+	
+	public void verifyHomePage()
+	{
+		lnkhome.isDisplayed();
 	}
 
 }

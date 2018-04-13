@@ -1,6 +1,4 @@
 package com.automation.extentreport;
-
-import com.automation.base.BaseClass;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
  
@@ -8,8 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
  
 public class ExtentTestManager {
-	static Map<Integer, ExtentTest> extentTestMap = new HashMap<Integer, ExtentTest>();
-    static ExtentReports extent = BaseClass.extentReport();
+    static Map extentTestMap = new HashMap();
+    static ExtentReports extent = ExtentManager.getReporter();
  
     public static synchronized ExtentTest getTest() {
         return (ExtentTest)extentTestMap.get((int) (long) (Thread.currentThread().getId()));

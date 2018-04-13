@@ -18,8 +18,8 @@ public class TC004_AddPeople_Test extends BaseClass{
 		System.out.println("==> TC004_AddEmployee  <==  Thread ID :" + Thread.currentThread().getId());
 	
 	ExcelReader excel = new ExcelReader();
-	  IcehrmHomePage homepage = new IcehrmHomePage(driver);
-	  IcehrmPeoplePage peoplepage = new IcehrmPeoplePage(driver);
+	  IcehrmHomePage homepage = new IcehrmHomePage(getDriver());
+	  IcehrmPeoplePage peoplepage = new IcehrmPeoplePage(getDriver());
 	  	  homepage.clickOnPeopleLink();
 	  	peoplepage.clickOnAddNewButton();
 	  	peoplepage.enterEmployeeNumber(excel.getTestData("TC001_var_empname"));
@@ -34,13 +34,11 @@ public class TC004_AddPeople_Test extends BaseClass{
 		  ConfigReader config = new ConfigReader();
 		  base.SetupBrowser();
 		  base.LaunchUrl(config.getIcehrmUrl());
-		  IcehrmLoginPage login = new IcehrmLoginPage(driver);
+		  IcehrmLoginPage login = new IcehrmLoginPage(getDriver());
 		  login.loginIcehrm();
 	  }
 
-	  @AfterClass
-	  public void afterClass() {
-	  }
+
 
 
 }

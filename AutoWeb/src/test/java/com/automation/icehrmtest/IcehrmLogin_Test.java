@@ -10,7 +10,7 @@ import com.automation.utils.ConfigReader;
 
 public class IcehrmLogin_Test extends BaseClass {
 	
-  @Test(enabled=true)
+ 
   public void IcehrmLogin() {
 	  System.out.println("Logged into ICE HRM Home");
 	  
@@ -22,14 +22,14 @@ public class IcehrmLogin_Test extends BaseClass {
   BaseClass base = new BaseClass();
   ConfigReader config = new ConfigReader();
   base.SetupBrowser();
+  System.out.println("<==> Current Execution Thread is <==> "+Thread.currentThread().getId());
   base.LaunchUrl(config.getIcehrmUrl());
-  IcehrmLoginPage login = new IcehrmLoginPage(driver);
+  IcehrmLoginPage login = new IcehrmLoginPage(getDriver());
   login.loginIcehrm();
+
   	  
   }
 
-  @AfterClass
-  public void afterClass() {
-  }
+ 
 
 }
